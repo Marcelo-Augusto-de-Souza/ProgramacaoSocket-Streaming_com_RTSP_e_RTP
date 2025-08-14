@@ -160,7 +160,6 @@ class Client:
 
 		# Play request
 		elif requestCode == self.PLAY and self.state == self.READY:
-			pass  # Replace with actual code later
 			# Update RTSP sequence number.
 			self.rtspSeq += 1
 			
@@ -172,7 +171,6 @@ class Client:
 
 		# Pause request
 		elif requestCode == self.PAUSE and self.state == self.PLAYING:
-			pass  # Replace with actual code later
 			# Update RTSP sequence number.
 			self.rtspSeq += 1
 			
@@ -184,7 +182,6 @@ class Client:
 
 		# Teardown request
 		elif requestCode == self.TEARDOWN and not self.state == self.INIT:
-			pass  # Replace with actual code later
 			# Update RTSP sequence number.
 			self.rtspSeq += 1
 
@@ -264,7 +261,6 @@ class Client:
 		self.rtpSocket.settimeout(0.5)
 
 		try:
-			pass  # Replace with actual code later
 			# Bind the socket to the address using the RTP port given by the client user
 			self.rtpSocket.bind(('', self.rtpPort))
 		except:
